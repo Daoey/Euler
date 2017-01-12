@@ -13,7 +13,7 @@ public final class Problem4 {
     public static long getLargestPalindrome(long number) {
 
         if (number < 1) {
-            throw new IllegalArgumentException("Number has to be larger than 1");
+            throw new IllegalArgumentException("Number has to be larger than 0");
         }
 
         long product1 = number;

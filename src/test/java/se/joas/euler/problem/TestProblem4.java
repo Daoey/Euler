@@ -15,6 +15,16 @@ public class TestProblem4 {
     public void largestPalindromeOf999ShouldBe906609() {
         assertEquals(906609, Problem4.getLargestPalindrome(999));
     }
+    
+    @Test
+    public void largestPalindromeOf1ShouldBe1() {
+        assertEquals(1, Problem4.getLargestPalindrome(1));
+    }
+    
+    @Test (expected = IllegalArgumentException.class)
+    public void largestPalindromeOfNegativeShouldThrowIllegalArgument() {
+        Problem4.getLargestPalindrome(-12);
+    }
 
     @Test(timeout = 100)
     public void speedTestMediumNumber() {
