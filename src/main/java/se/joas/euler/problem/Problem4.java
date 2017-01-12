@@ -3,8 +3,8 @@ package se.joas.euler.problem;
 public final class Problem4 {
 
     /**
-     * Gets the largest palindrome that can be created by a product less than
-     * number.
+     * Gets the largest palindrome that can be created by a product of two
+     * numbers less than the parameter number.
      * 
      * @param number
      *            The max size of the product
