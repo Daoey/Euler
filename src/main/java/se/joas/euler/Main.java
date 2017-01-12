@@ -6,6 +6,7 @@ import java.time.Instant;
 import se.joas.euler.problem.Problem1;
 import se.joas.euler.problem.Problem2;
 import se.joas.euler.problem.Problem3;
+import se.joas.euler.problem.Problem4;
 
 public class Main {
 
@@ -29,6 +30,8 @@ public class Main {
         long answerProblem3 = Problem3.getLargstPrimeFactor(600851475143L);
         System.out.println("Solution problem 3: " + answerProblem3);
         
+        long answerProblem4 = Problem4.getLargestPalindrome(999);
+        System.out.println("Solution problem 4: " + answerProblem4);
         
     }
 
