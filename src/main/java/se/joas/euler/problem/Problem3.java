@@ -10,7 +10,7 @@ public final class Problem3 {
      * @return The largest prime factor of the number or 0 if the number is less
      *         than or equal to 1
      */
-    public static long getLargstPrimeFactor(long number) {
+    public static long getLargestPrimeFactor(long number) {
 
         if (number <= 1) {
             throw new IllegalArgumentException("Number must be larger than 1");

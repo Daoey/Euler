@@ -24,7 +24,7 @@ public final class Problem5 {
 
         long smallestMultiple = 2;
         for (long counter = 2L; counter <= number; counter++) {
-            if (new BigInteger(new Long(counter).toString()).isProbablePrime(1000)) {
+            if (new BigInteger(Long.toString(counter)).isProbablePrime(1000)) {
                 smallestMultiple *= counter;
                 long prime = counter;
                 while (prime * prime <= number) {

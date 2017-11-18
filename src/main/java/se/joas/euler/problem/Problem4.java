@@ -27,7 +27,7 @@ public final class Problem4 {
                 break;
             }
             while (product1 * product2 >= largestPalindrome) {
-                if (isPalindrome(new Long(product1 * product2).toString())) {
+                if (isPalindrome(Long.toString(product1 * product2))) {
                     if (product1 * product2 > largestPalindrome) {
                         largestPalindrome = product1 * product2;
                     }

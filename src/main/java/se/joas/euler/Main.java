@@ -1,13 +1,9 @@
 package se.joas.euler;
 
+import se.joas.euler.problem.*;
+
 import java.time.Duration;
 import java.time.Instant;
-
-import se.joas.euler.problem.Problem1;
-import se.joas.euler.problem.Problem2;
-import se.joas.euler.problem.Problem3;
-import se.joas.euler.problem.Problem4;
-import se.joas.euler.problem.Problem5;
 
 public class Main {
 
@@ -23,12 +19,10 @@ public class Main {
         System.out.println("Solution problem 1: " + answerProblem1);
         System.out.println("Time: " +  Duration.between(start, end));
         
-        
         long answerProblem2 = Problem2.findSumOfEvenTermsFibonacci(4000000);
         System.out.println("Solution problem 2: " + answerProblem2);
-
         
-        long answerProblem3 = Problem3.getLargstPrimeFactor(600851475143L);
+        long answerProblem3 = Problem3.getLargestPrimeFactor(600851475143L);
         System.out.println("Solution problem 3: " + answerProblem3);
         
         long answerProblem4 = Problem4.getLargestPalindrome(999);
@@ -36,7 +30,6 @@ public class Main {
         
         long answerProblem5 = Problem5.getSmallestMultiple(20);
         System.out.println("Solution problem 5: " + answerProblem5);
-        
     }
 
 }
