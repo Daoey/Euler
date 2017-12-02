@@ -1,6 +1,8 @@
 package se.joas.euler.problem;
 
 
+import se.joas.euler.PrimeGenerator;
+
 public final class Problem7 {
 
     /**Finds the prime at the specified prime index.
@@ -11,19 +13,12 @@ public final class Problem7 {
      * @return
      *  The prime at the prime index
      */
-    public static long findPrime(int primeIndex) {
 
-        long number = 2;
-        int primeCounter = 0;
-        while (true) {
-            if(isPrime(number)) {
-                primeCounter++;
-                if(primeCounter == primeIndex) {
-                    return number;
-                }
-            }
-            number++;
-        }
+    public static int findPrime(int primeIndex) {
+
+        PrimeGenerator primeGenerator = new PrimeGenerator(Double.valueOf(primeIndex * 1000).intValue());
+
+        return primeGenerator.getPrimes().get(primeIndex - 1);
     }
 
     private static boolean isPrime(long number) {

@@ -53,12 +53,14 @@ public class Main {
         end = Instant.now();
         System.out.println("Solution problem 6: " + answerProblem6);
         System.out.println("Time: " + Duration.between(start, end));
+        System.out.println("--------------------------------");
 
         start = Instant.now();
         long answerProblem7 = Problem7.findPrime(10001);
         end = Instant.now();
         System.out.println("Solution problem 7: " + answerProblem7);
         System.out.println("Time: " + Duration.between(start, end));
+        System.out.println("--------------------------------");
     }
 
 }
